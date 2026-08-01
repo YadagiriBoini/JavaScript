@@ -1,0 +1,154 @@
+->Complete Client_Side validation using JavaScript:
+====================================
+->Login_Page
+              Username --->Rahul_1234567---->^[A-Z]{1}[a-z]*[_]{1}[0-9]{7}$
+              Password ---->RA_12345  ----->^[A-Z]{2}[_]{1}[0-9]{5}$
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>Welcome to Quality Thought for Claude_Cowork_Implementation</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>Claude_AI_Login_Page</legend>
+        <center>
+            <table border="2">
+                <form action="" onsubmit="return Test_Case1()" method="post">
+                <tr>
+                    <td><label for="">Username</label></td>
+                    <td><input type="text" placeholder="Username" id="A" autocomplete="off"></td>
+                    <td><span id="XYZ"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" placeholder="Pasword" id="B" autocomplete="off"></td>
+                    <td><span id="xyz"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="LOGIN">
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+                </form>
+
+            </table>
+        </center>
+    </fieldset>
+    <script>
+        function Test_Case1()
+           {
+            var username=document.getElementById("A").value 
+            var password=document.getElementById("B").value
+            var obj1=username.match(/^[A-Z]{1}[a-z]*[_]{1}[0-9]{7}$/g)
+            var obj2=password.match(/^[A-Z]{2}[_]{1}[0-9]{5}$/g)
+            if(username=="" || username==null)
+              { 
+                window.alert("Dear User:Username is required")
+                document.getElementById("XYZ").innerHTML="*** Dear User:Username is required ***"
+                return false
+
+              }
+              else if(obj1=="" || obj1==null)
+              {
+                window.alert(username +" : Dear User:In_valid username")
+                document.getElementById("XYZ").innerHTML=username+" *** Dear User:Invalid_username Ex:Rahul_1234567***"
+                return false
+              }
+              else if(password=="" || password==null)
+              {
+                window.alert("Dear User:Password is reqired")
+                document.getElementById("xyz").innerHTML="*** Dear User:Password is required ***"
+                return false
+              }
+              else if(obj2=="" || obj2==null)
+              {
+                window.alert(password+":Dear User:Password is in_valid")
+                document.getElementById("xyz").innerHTML=password+" *** Dear User:Password is in_valid Ex:RA_12345 ***"
+                return false
+              }
+            
+           }
+    </script>
+    
+</body>
+</html>
+
+Mobile_Number Validation in JavaScript:
+===========================
++91-6/7/8/9090123123  ---->^[+]{1}[9]{1}[1]{1}-[6-9]\d{9}$
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>Welcome to Quality Thought for Claude_Cowork_Implementation</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>Claude_AI_Login_Page</legend>
+        <center>
+            <table border="2">
+                <form action="" onsubmit="return Test_Case1()" method="post">
+                    <tr>
+                        <td><label for="">Mobile_Number</label></td>
+                        <td><input type="tel" placeholder="Mobile_Number" id="ABC"></td>
+                        <td><span id="abc"></span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Validate"></td>
+                    </tr>
+            
+                </form>
+
+            </table>
+        </center>
+    </fieldset>
+    <script>
+        function Test_Case1()
+           {
+            var obj1=document.getElementById("ABC").value 
+            var obj2=obj1.match(/^[+]{1}[9]{1}[1]{1}-[6-9]\d{9}$/g)
+            if(obj1=="" || obj1==null)
+               {
+                window.alert("Dear User:Mobile_Number is required")
+                document.getElementById("abc").innerHTML="*** Dear User:mobile_number is required ***"
+                return false
+               }
+               else if(obj2=="" || obj2==null)
+                 {
+                    window.alert(obj1+": In_valid mobile_number")
+                    document.getElementById("abc").innerHTML=obj1+" *** Dear User:mobile_number is in_valid Ex:+91-9090123123 ***"
+                    return false
+                 }
+           
+           }
+    </script>
+    
+</body>
+</html>
+
+Email Validation using JavaScript:
+======================
+abc_ABC_12345.ABC@gmail.com/abc_ABC_12345.ABC@yahoo.com/abc_ABC_12345.ABC@rediff.com/

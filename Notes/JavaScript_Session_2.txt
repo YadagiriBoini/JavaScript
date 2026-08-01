@@ -1,0 +1,653 @@
+Typecasting in JavaScript:
+=================
+                                   JavaScript supports Typecasting.It is the process or methodlogy to convert from one data type into another data type using
+following predefine functions
+
+->parseInt()
+->parseFloat()
+->Number()
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a =parseInt(window.prompt("Enter the value of a:"))
+        var b=parseInt(window.prompt("Enter the value of b:"))
+        var c=a+b 
+        document.write(a+" "+typeof(a))
+        document.write("<hr>")
+        document.write(b+" "+typeof(b))
+        document.write("<hr>")
+        document.write(c+" "+typeof(c))
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a =parseFloat(window.prompt("Enter the value of a:"))
+        var b=parseFloat(window.prompt("Enter the value of b:"))
+        var c=a+b 
+        document.write(a+" "+typeof(a))
+        document.write("<hr>")
+        document.write(b+" "+typeof(b))
+        document.write("<hr>")
+        document.write(c+" "+typeof(c))
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a =Number(window.prompt("Enter the value of a:"))
+        var b=Number(window.prompt("Enter the value of b:"))
+        var c=a+b 
+        document.write(a+" "+typeof(a))
+        document.write("<hr>")
+        document.write(b+" "+typeof(b))
+        document.write("<hr>")
+        document.write(c+" "+typeof(c))
+    </script>
+    
+</body>
+</html>
+
+->Data types in JavaScript:
+==================
+                                  JavaScript supports following types of data types
+which are as follows
+
+->Primitive data type
+
+               .Number data type
+               .String data type
+               .Boolean data type
+               .Null data type
+               .Undefine data type
+
+->***Non primitive data type***
+
+                           .An array data type 
+                           .An Object data type
+                           .Regex Object data type(Regular expression data type)
+
+
+ .Number data type:
+==============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=150 
+        var b=-123 
+        var c=123.56 
+        var d=-111.123
+        document.write(a+" "+typeof(a))
+        document.write("<hr>")
+        document.write(b+" "+typeof(b))
+        document.write("<hr>")
+        document.write(c+" "+typeof(c))
+        document.write("<hr>")
+        document.write(d+" "+typeof(d))
+
+       
+    </script>
+    
+</body>
+</html>
+
+.String data type:
+============
+                              JavaScript supports String data type.It can be represent as 
+collection of characters enclosed with ''/"".
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Name="Mobile_1"
+        var Compnay_Name='Samsung'
+        document.write(Product_Name+" "+typeof(Product_Name))
+        document.write("<hr>")
+        document.write(Compnay_Name+" "+typeof(Compnay_Name))
+        document.write("<hr>")
+    
+
+       
+    </script>
+    
+</body>
+</html>
+
+.Boolean data type:
+=============
+                           JavaScript supports boolean data type.The main objective of
+boolean data type is to return boolean values true/false after checking condition.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var obj1=true 
+        var obj2=false 
+        document.write(obj1+" "+typeof(obj1))
+        document.write("<hr>")
+        document.write(obj2+" "+typeof(obj2))
+
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+->Null data type:
+===========
+              Null data type is an object in JavaScript.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+
+        var data_1=null 
+        document.write("The result_set is:"+data_1)
+        document.write("<hr>")
+        document.write("The data type is:"+typeof(data_1))
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+->Undefine data type:
+==============
+                              When we define or declare variable_name but assigning
+value for that variable then Undefine data exits.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1 
+        document.write(data_1+" "+typeof(data_1))
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+
+.An array data type:
+=============
+                        JavaScript supports an array data type.It is a  collection of 
+homogenious and hetrogenous elements.In JavaScript We can define or ]
+declare an array data type using following ways
+
+->Using an array literal
+->Using An instance of an array
+->Using an array constructor
+
+
+->Using an array literal:
+================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[21,22,23,24,25,26,27]
+        document.write("Ages are:"+ages)
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Information=[1001,"Laptop_1",79000,"Samsung"]
+        document.write(Product_Information)
+  
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Information=[1001,"Laptop_1",79000,"Samsung"]
+        document.write(Product_Information)
+        document.write("===Product_Information===")
+        document.write("<br>")
+        document.write("Pid is:"+Product_Information[0])
+        document.write("<br>")
+        document.write("Pname is:"+Product_Information[1])
+  
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+->Using an instance of array
+===================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Employee_Information=new Array() 
+        Employee_Information[0]=1001 
+        Employee_Information[1]="Rahul"
+        Employee_Information[2]=29000.0 
+        Employee_Information[3]="JavaScript Developer"
+        Employee_Information[4]="HCL"
+        document.write("Employee_Details are:"+Employee_Information)
+        
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+->Using an array constructor:
+====================
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Student_Information = new Array(1001,"Rahul",21000.0,"HCL")
+        document.write("===Stdent_Information====")
+        document.write("<hr>")
+        document.write("Student_Details are:"+Student_Information)
+      
+        
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+->push()
+->pop()
+
+->push():
+======
+            It is a predefine function/method in JS.The main objective of 
+push() function/method is to add one or more then one elemements
+inside the an array.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24]
+        document.write("Before_operations:"+ages)
+        document.write("<hr>")
+        ages.push(25)
+        document.write("After_Operations:"+ages)
+      
+      
+        
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24]
+        document.write("Before_operations:"+ages)
+        document.write("<hr>")
+        ages.push(25,26,27,28,29)
+        document.write("After_Operations:"+ages)
+      
+       
+    </script>
+    
+</body>
+</html>
+
+->pop():
+======
+          It is a predefine function/method in JS.The main objective of 
+pop() function is remove or delete the last element from an array.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24]
+        document.write("Before_operations:"+ages)
+        document.write("<hr>")
+        ages.pop()
+        document.write("After_Operations:"+ages)
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24,25,26]
+        document.write("Before_operations:"+ages)
+        document.write("<hr>")
+        ages.pop(0)
+        document.write("After_Operations:"+ages)
+      
+      
+        
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24,25,26]
+        document.write("Before_operations:"+ages)
+        document.write("<hr>")
+        ages.pop(ages[0])
+        document.write("After_Operations:"+ages)
+      
+      
+        
+   
+
+
+   
+
+       
+    </script>
+    
+</body>
+</html>
+
+

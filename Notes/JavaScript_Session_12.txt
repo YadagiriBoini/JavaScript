@@ -1,0 +1,291 @@
+->Events in JavaScript:
+===============
+                    JavaScript supports Events.The main objeective of events is perform an action
+as per the application reqn.
+
+->onclick()
+->onsubmit()
+
+
+->onclick():
+=======
+              onclick() is a JavaScript events meant for button validation.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>Events</legend>
+        <hr>
+        <center>
+            <form action="" method="post">
+                <input type="submit" value="JavaScript_Session" onclick="Test_Case1()">
+            </form>
+        </center>
+        <hr>
+        <script>
+            function Test_Case1()
+            {
+                window.alert('Welcome to Events in JavaScript')
+            }
+        </script>
+    
+
+
+    </fieldset>
+    
+</body>
+</html>
+
+->onsubmit():
+=========
+                onsubmit() is a JavaScript events meant for complete form validation.onsubmit() event can be return inside th form tag
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <fieldset>
+        <legend>Events</legend>
+        <hr>
+        <center>
+            <form action="" onsubmit="return Test_Case1()"  method="post">
+                <input type="submit" value="JavaScript_Session">
+            </form>
+        </center>
+        <hr>
+        <script>
+            function Test_Case1()
+            {
+                window.alert('Welcome to Events in JavaScript ....')
+                return false
+            }
+        </script>
+    
+
+
+    </fieldset>
+    
+</body>
+</html>
+
+Working on Date object:
+=================
+                         JavaScript supports Date object.The main objective of date object is to work on IST TIME.We can create date obejct in JavaScript as follows
+
+var d1  = new Date() ---->IST TIME
+
+
+getFullYear():It is used to display current year in number format  ----> 1970
+getFullDay(): it is used to display the day in number format  ---> 0 to 7
+getMonth():It is used to display the month in number format 
+getHours():It is used to dispaly the hours in 24 hours format  ----> 0 to 23
+getMinutes():It is used to display the minutes in number format from 0 to 59 
+getSeconds():It is used to display the seconds in number format from 0 to 59
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Date is:"+d1)
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Year:"+d1.getFullYear())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Month:"+d1.getMonth())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Day:"+d1.getDay())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Hours:"+d1.getHours())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Minutes:"+d1.getMinutes())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaSript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var d1  = new Date()
+        document.write("Current_Seconds:"+d1.getSeconds())
+        document.write("<hr>")
+    </script>
+    
+    
+</body>
+</html>
+                        

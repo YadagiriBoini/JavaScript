@@ -1,0 +1,405 @@
+->JavaScript:
+=========
+              .JavaScript is a FronEnd Scripting Language.The main objective of 
+JavaScript is to develop Dynamic User_Interfaces/FrontEnd as per the applicaiton reqn.
+
+          .JavaScript is a Dynamically typed Scripting Language.
+
+          .JavaScript is a Object Based Scripting Language
+
+         .JavaScript is a interpreter Scripting Language.
+
+         .JavaScript allows the feathers of Object Oriented Programming Language.
+
+         .All HTML/HTML5 tags act as a Object in JavaScript
+
+        .We can write the JavaScript Code in following ways
+
+                                       ->***Inside the body tag
+                                       ->Inside the head tag 
+                                       ->Separate JS file with .js extension.
+
+->document.write():
+=============
+                               It is a method/function in JavaScript.The main objective of
+this method is display the dynamic content on the web page.It is present in 
+DOM(Document Object Model).
+
+
+Inside the body tag:
+==============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        document.write("<h1><tt>JavaScript written inside the body_tag</tt></h1>")
+    </script>
+    
+</body>
+</html>
+
+
+->Inside the head tag:
+===============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        document.write("<h1><tt>JavaScript return inside the Head_tag ...</tt></h1>")
+    </script>
+</head>
+<body>
+   
+    
+</body>
+</html> 
+
+
+ ->Separate JS file with .js extension.
+=========================
+
+index1.html:
+=========
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="demo1.js"></script>
+  
+</head>
+<body>
+   
+    
+</body>
+</html>
+
+demo1.js:
+======
+document.write("<h1><tt>JavaScript writtern using ExternalJS</tt></h1>")
+
+
+How many ways we can define or declare variable in JavaScript?
+==========================================
+We can define or declare a variable in JavaScript using following ways
+
+->Using var keyword
+->Using let keyword
+->Using const keyword
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Eid=1001 
+        let Ename="Rahul"
+        const Esal=23000 
+        document.write("Eid is:"+Eid)
+        document.write("<hr>")
+        document.write("Ename is:"+Ename)
+        document.write("<hr>")
+        document.write("Esal is:"+Esal)
+    </script>
+   
+    
+</body>
+</html>
+
+
+console.log():
+========
+             It is a method/function in JavaScript.The main objective of console.log() method is meant for Client_Side debugging operations.
+Debugging can be represent as finding and fix the bugs as per the application reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=1000 
+        var b=2000 
+        var c=a+B 
+        document.write(c)
+        console.log(c)
+    
+    </script>
+   
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=1000 
+        var b=2000 
+        var c=a+b
+        document.write("Sum is:"+c)
+        console.log("Sum is:"+c)
+    
+    </script>
+   
+    
+</body>
+</html>
+
+
+Dailog boxes in JavaScript:
+=================
+                            JavaScript supports Dailog boxes.The main objective of 
+Dailog boxes is to provide the intimation to the end_user.Dailog boxes are
+the entry point on the web pages.Following are the Dailog boxes in 
+JavaScript
+
+->alert()/window.alert()
+->confirm()/window.confirm()
+->prompt()/window.prompt()
+
+
+->alert()/window.alert():
+================
+                       It is a dailog boxe in JavaScript.The main objective of this dailog 
+box is to provide the intimation to end_user using a dailog box.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        alert("Weclome to JS_world ...")
+   
+    </script>
+   
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        window.alert("Weclome to JS_world .......")
+        document.write("Welcome to JS_World ......")
+        console.log("Welcome to JS_World .....")
+
+   
+    </script>
+   
+    
+</body>
+</html>
+
+
+->confirm()/window.confirm():
+====================
+                                       It is a dailog box in JavaScript.The main objective of
+confirm()/window.confirm() is provide the intimation to end_user wheather 
+to proceed for next level operation with one dailog box with cancel/ok.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=window.confirm("Do you want to proceed for next_operations:")
+        document.write("The result_set is:"+a)
+        window.alert("The result_set is:"+a)
+        console.log("The result_set is:"+a)
+     
+
+   
+    </script>
+   
+    
+</body>
+</html>
+
+->prompt()/window.prompt():
+=====================
+                                           It is a dailog box in JavaScript.The main objective of
+this dailog is read the data from the keybaord.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=window.prompt("Enter the value of a:")
+        document.write("a_value is:"+a)
+        window.alert("a_value is:"+a)
+    
+
+   
+    </script>
+   
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+  
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=window.prompt("Enter the value of a:")
+        var b=window.prompt("Enter the value of b:")
+        var c=a+b 
+        document.write(a+" "+typeof(a))
+        document.write("<hr>")
+        document.write(b+" "+typeof(b))
+        document.write("<hr>")
+        document.write("The result_set is:"+c)
+   
+    
+
+   
+    </script>
+   
+    
+</body>
+</html>
+
+
+TypeCasting in JavaScript:
+==================
+                                   JavaScript supports Typecasting.It is the process methodlogy to convert the one type of data into another type of data using
+following functions
+
+->parstInt()
+->parseFloat()
+->Number()
+                             
+
+
+

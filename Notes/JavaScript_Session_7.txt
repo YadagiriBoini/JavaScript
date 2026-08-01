@@ -1,0 +1,890 @@
+->Regex Object data type(Regular Expression):
+===============================
+                                        JavaScript supports Regex Object data type.It is also 
+known as regular expression.The main objective of regex object(Regular expression) if you want represent a string as a pattern what we are searching
+then we can go with regex object data type(Regular expression).
+
+
+->match()
+->search()
+
+->match():
+=======
+              It is a predefine function in JavaScript.The main objective of match() is to match and return pattern as per the application reqn.
+
+
+->search():
+=======
+             It is a predefine function in JavaScript.The main objective of search()
+function is return the indexing position of the pattern where our pattern starts if pattern not found return -1
+
+//i -- g
+
+i means case sentitive and case in_sensitive as well only once pattern
+
+g means only case sensitive for more then one pattern 
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var res1=str1.match(/JavaScript/i)
+        if(res1!=null)
+           {
+            document.write(res1+": Pattern is there")
+            document.write("<hr>")
+           }
+        else 
+           {
+            document.write(res1+": Pattern is not there")
+            document.write("<hr>")
+           }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var res1=str1.match(/JavaScript/g)
+        if(res1!=null)
+           {
+            document.write(res1+": Pattern is there")
+            document.write("<hr>")
+           }
+        else 
+           {
+            document.write(res1+": Pattern is not there")
+            document.write("<hr>")
+           }
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var str1=window.prompt("Enter the pattern:")
+        var res1=str1.search(/JavaScript/g)
+        if(res1!=null)
+           {
+            document.write(res1+": Pattern is there")
+            document.write("<hr>")
+           }
+        else 
+           {
+            document.write(res1+": Pattern is not there")
+            document.write("<hr>")
+           }
+    </script>
+    
+</body>
+</html>
+
+Character classes in JavaScript:
+=====================
+[ABC]  --->A,B,C 
+[a-z]   ---->All lowercase characters from a to z 
+[A-Z]   ---->All uppercase characters from A to Z 
+[0-9]  -----> Digit from 0 to 9
+[a-zA-Z]  ----> All uppercase and lowercase characters
+[a-zA-Z0-9]  ---->Alpha numerical values 
+[^a-zA-Z0-9]  ---> Only specail characters 
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[ABC]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[A-Z]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex3:
+====
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[a-z]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[0-9]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[A-Za-z0-9]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[^A-Za-z0-9]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+->Predefine classes in JavaScript:
+======================
+\S  ----> Except spaces 
+\s  ---->Only spaces 
+\d  ---->Only digits from 0-9 
+\D  ----> Except digits from 0-9 
+\w  ----> Alpha numerical values 
+\W  ----> Only specail characters
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\S/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\s/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\d/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\D/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\w/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/\W/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Quantifiers in JavaScript:
+================
+A ---->  Only A's 
+A+  ----> Minimum one A or more then one A's
+A*  ----> Minimum one A or more then one A's with Zero number of A's and
+end+1
+A?  ---->Only Single A's and zero number of A's and end+1 
+A{2,4} --->AA,AAA,AAAA  are allowed
+
+^A  ---->  Wheather our pattern starts with A or not 
+A$  ---->  Wheather our pattern ends with or A or not
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/A/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/A+/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/A*/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/A?/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/A{2,5}/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/./g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Email_Address:")
+        var res2=Email_Address.match(/[.]/g)
+        if(res2!=null)
+          {
+            document.write(res2+": Pattern is there")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(res2+": Pattern is not there")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex8:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Pattern:")
+        var res2=Email_Address.match(/^A/g)
+        if(res2!=null)
+          {
+            document.write(Email_Address+": Our Pattern starts with A")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(Email_Address+": Our Pattern not starts with A")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+Ex9:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Email_Address=window.prompt("Enter the Pattern:")
+        var res2=Email_Address.match(/A$/g)
+        if(res2!=null)
+          {
+            document.write(Email_Address+": Our Pattern ends with A")
+            document.write("<hr>")
+          }
+        else 
+           {
+            document.write(Email_Address+": Our Pattern not ends with A")
+            document.write("<hr>")
+           }
+       
+    </script>
+    
+</body>
+</html>
+
+
+
+
+

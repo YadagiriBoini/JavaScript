@@ -1,0 +1,337 @@
+->DOM:
+======
+             JavaScript supports DOM which stands document object model.The main objective
+of DOM is how to make Dynamic Web pages as per the application reqn.
+
+D --->Document ---->It can be any document
+
+O ---->Object    ----> All HTML/HTML5 tags act as Object in JavaScript
+
+M --->Model   ------> How to represent Dynamic Content on web page
+
+
+DOM provides following methods which are as follows
+======================================
+->document.write()
+->document.writeln()
+->document.getElementById()
+->document.getElementsByName()
+->document.getElementsByTagName()
+->document.getElementsByClassName()
+
+
+->document.getElementById():
+======================
+                                                 It is method which is present inside the DOM.The main objective of this method is read the data/information from the text_field  and perform
+the operations as per the application reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center><h1><tt>JavaScript_DOM_Session</tt></h1></center>
+    <hr>
+    <hr>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+            <table>
+                <tr>
+                    <td><label for="">Username</label></td>
+                    <td><input type="text" placeholder="username" id="A" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Validate">
+                          <input type="reset" value="RESET">
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var username=document.getElementById("A").value
+            window.alert("My username is:"+username)
+            return false
+        }
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center><h1><tt>JavaScript_DOM_Session</tt></h1></center>
+    <hr>
+    <hr>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+            <table border="3">
+                <tr>
+                    <td><label for="">Number_1</label></td>
+                    <td><input type="text" placeholder="Enter number" id="a" autocomplete="off"></td>
+                </tr>
+                 <tr>
+                    <td><label for="">Number_2</label></td>
+                    <td><input type="text" placeholder="Enter number" id="b" autocomplete="off"></td>
+                </tr>
+                 <tr>
+                    <td><label for="">Result</label></td>
+                    <td><input type="text" placeholder="Enter number" id="c" autocomplete="off"></td>
+                </tr>
+               <tr>
+                <td></td>
+                <td><input type="submit" value="ADD">
+                    <input type="reset" value="RESET">
+                </td>
+               </tr>
+                
+            </table>
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var A1=document.getElementById("a").value 
+            var A2=document.getElementById("b").value 
+            var res1=A1+A2 
+            document.getElementById("c").value=res1 
+            return false
+        }
+    </script>
+   
+    
+    
+</body>
+</html>
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center><h1><tt>JavaScript_DOM_Session</tt></h1></center>
+    <hr>
+    <hr>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+            <table border="3">
+                <tr>
+                    <td><label for="">Number_1</label></td>
+                    <td><input type="text" placeholder="Enter number" id="a" autocomplete="off"></td>
+                </tr>
+                 <tr>
+                    <td><label for="">Number_2</label></td>
+                    <td><input type="text" placeholder="Enter number" id="b" autocomplete="off"></td>
+                </tr>
+                 <tr>
+                    <td><label for="">Result</label></td>
+                    <td><input type="text" placeholder="Enter number" id="c" autocomplete="off"></td>
+                </tr>
+               <tr>
+                <td></td>
+                <td><input type="submit" value="ADD">
+                    <input type="reset" value="RESET">
+                </td>
+               </tr>
+                
+            </table>
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            var A1=Number(document.getElementById("a").value)
+            var A2=Number(document.getElementById("b").value)
+            var res1=A1+A2 
+            document.getElementById("c").value=res1 
+            return false
+        }
+    </script>
+   
+    
+    
+</body>
+</html>
+
+Simple Client side validation:
+====================
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center><h1><tt>Employee Login</tt></h1></center>
+    <hr>
+    <hr>
+    <fieldset>
+        <legend>Login_Form</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+            <table border="3">
+              <tr>
+                <td><label for="">Username</label></td>
+                <td><input type="text" placeholder="Username" id="A" autocomplete="off"></td>
+              </tr>
+                  <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" placeholder="Password" id="B" autocomplete="off"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="LOGIN">
+                    <input type="reset" value="RESET">
+                </td>
+              </tr>
+                
+            </table>
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+           var username=document.getElementById("A").value 
+           var p1=document.getElementById("B").value
+           if(username==""||username==null)
+           {
+            window.alert("Dear Employee:Username is required ...")
+            return false
+           }
+           else if(p1==""||p1==null)
+           {
+            window.alert("Dear Emoloyee:Password is required")
+            return false
+           }
+          
+        }
+    </script>
+   
+    
+    
+</body>
+</html>
+
+
+Working on innerHTML:
+=================
+                             The main objective of innerHTML is to display the dynamic message on
+the web page as per the application reqn.innerHTML is assoicated with document.getElementId().
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center><h1><tt>Employee Login</tt></h1></center>
+    <hr>
+    <hr>
+    <fieldset>
+        <legend>Login_Form</legend>
+        <center>
+            <form action="" method="post" onsubmit="return Test_Case1()">
+            <table border="3">
+              <tr>
+                <td><label for="">Username</label></td>
+                <td><input type="text" placeholder="Username" id="A" autocomplete="off"></td>
+                <td><span id="ABC"></span></td>
+              </tr>
+                  <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" placeholder="Password" id="B" autocomplete="off"></td>
+                <td><span id="abc"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="LOGIN">
+                    <input type="reset" value="RESET">
+                </td>
+              </tr>
+                
+            </table>
+            </form>
+        </center>
+    </fieldset>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+           var username=document.getElementById("A").value 
+           var p1=document.getElementById("B").value
+           if(username==""||username==null)
+           {
+            window.alert("Dear Employee:Username is required")
+            document.getElementById("ABC").innerHTML="*** Dear Employee:Username is required  ***"
+            return false
+
+           }
+           else if(p1==""||p1==null)
+           {
+            window.alert("Dear Employee:Password is required")
+            document.getElementById("abc").innerHTML="*** Dear Employee:Password is required ***"
+            return false
+           }
+          
+        }
+    </script>
+   
+    
+    
+</body>
+</html>
+

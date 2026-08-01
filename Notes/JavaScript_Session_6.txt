@@ -1,0 +1,795 @@
+Break statement in JavaScript:
+====================
+                                      JavaScript supports Break statement.The main objective of break statement is to control the loops as per the application
+reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        for(var x1=0;x1<10;x1++)
+         {
+            if(x1==5)
+              {
+                 document.write("Welcome to JavaScript Break_Statement"+"<br>")
+                 break
+              }
+              document.write("The processing_values are:"+x1+"<br>")
+         }
+       
+
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[1001,1002,1003,1004,1005,17000,20,30,40,50]
+        for(var x1=0;x1<data_1.length;x1++)
+            {
+                if(data_1[x1]>15500)
+                   {
+                    document.write("Welcome to JavaScript Break_Statement")
+                    break
+                   } 
+                document.write("The processing_Items are:"+data_1[x1]+"<br>")
+            }
+
+
+    </script>
+    
+</body>
+</html>
+
+Continue Statement in JavaScript:
+======================
+                                   JavaScript supports Continue statement.The main objective of continue statement is to skip the current iteration even_though
+condition is satisfied continue for next iteration.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        for(var a=0;a<=10;a++)
+          {
+            if(a==4)
+              {
+                document.write("Continue the process/application"+"<br>")
+                continue
+              }
+            document.write("The processing_items are:"+a+"<br>")
+          }
+
+
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        for(var a=1;a<=15;a++)
+          {
+            if(a%2==0)
+              {
+                continue
+              }
+            else 
+            {
+                document.write("The odd_numbers are:"+a+"<br>")
+            }
+          }
+   
+
+    </script>
+    
+</body>
+</html>
+
+->Switch statement:
+==============
+                          JavaScript supports switch statement.The main objective of
+switch statement is to check more then one condition.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Grade_system=window.prompt("Enter the Grade_System:")
+        switch(Grade_system)
+          {
+            case 'A': 
+                document.write(Grade_system+": You passed in First_Class")
+                break 
+            case 'B': 
+                document.write(Grade_system+": You passed in Second_Class")
+                break 
+            case 'C': 
+                  document.write(Grade_system+": You passed in Third_Class")
+                  break 
+            default: 
+                 document.write(Grade_system+":Sorry you did not qualify for round")
+          }
+       
+    </script>
+    
+</body>
+</html>
+
+Functions in JavaScript:
+===============
+
+Q1)What is Function?
+===============
+                           A function can be represent as a peice of code or block of unit.The main objective of function is to provide the code reusability which
+means once write and call any number of times as per the application reqn.In 
+JavaScript we can define or declare a function using function keyword followed Function_Name.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            document.write("Welcome to Functions in JavaScript"+"<br>")
+        }
+        Test_Case1()
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1()
+        {
+            document.write("Welcome to Functions in JavaScript"+"<br>")
+        }
+        Test_Case1()
+        Test_Case1()
+        Test_Case1()
+        Test_Case1()
+       
+    </script>
+    
+</body>
+</html>
+
+In JavaScript function can be created in following ways:
+====================================
+->Using Name_full function
+->Using Name_less function
+->Using arrow function
+
+
+->Using Name_full function:
+==================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function T1()
+        {
+            document.write("This is Name_full Function")
+        }
+        T1()
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+->Using Name_less function:
+====================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Test_Case1 = function() 
+        {
+            document.write("This is Name_less function ....")
+        }
+        Test_Case1()
+      
+       
+    </script>
+    
+</body>
+</html>
+
+->Using arrow function:
+===============
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Test_Case1 = ()=>
+        {
+            document.write("This is arrow_function in JavaScript.....")
+        }
+        Test_Case1()
+      
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Product_Information(Pid,Pname,Price,Company)
+        {
+            document.write("==Product_Information===")
+            document.write("<br>")
+            document.write("Pid is:"+Pid)
+            document.write("<br>")
+            document.write("Pname is:"+Pname)
+            document.write("<br>")
+            document.write("Price is:"+Price)
+            document.write("<br>")
+            document.write("Company is:"+Company)
+            document.write("<br>")
+        }
+        Product_Information(1001,"Mobile_1",39000,"Samsung")
+      
+       
+    </script>
+    
+</body>
+</html>
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Product_Information(Pid=1001,Pname,Price,Company)
+        {
+            document.write("==Product_Information===")
+            document.write("<br>")
+            document.write("Pid is:"+Pid)
+            document.write("<br>")
+            document.write("Pname is:"+Pname)
+            document.write("<br>")
+            document.write("Price is:"+Price)
+            document.write("<br>")
+            document.write("Company is:"+Company)
+            document.write("<br>")
+        }
+        Product_Information("Mobile_1",39000,"Samsung")
+      
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Product_Information(Pname,Price,Company,Pid=1001)
+        {
+            document.write("==Product_Information===")
+            document.write("<br>")
+            document.write("Pid is:"+Pid)
+            document.write("<br>")
+            document.write("Pname is:"+Pname)
+            document.write("<br>")
+            document.write("Price is:"+Price)
+            document.write("<br>")
+            document.write("Company is:"+Company)
+            document.write("<br>")
+        }
+        Product_Information("Mobile_1",39000,"Samsung")
+      
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1(X1,X2)
+        {
+                return X1+X2
+        }
+        document.write("Sum is:"+Test_Case1(100,200))
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex6:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1(X1,X2)
+        {
+                return X1+X2
+        }
+        obj1=Test_Case1(100,200)
+        document.write("Sum is ....:"+obj1)
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex7:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1()
+
+        {
+            document.write("Welcome to JS for LangChain(Generative AI Framework)")
+            document.write("<br>")
+            return "First_Phase of recursion ...."
+          
+        }
+        Test_Case1()
+        Test_Case1()
+        Test_Case1()
+        Test_Case1()
+        document.write(Test_Case1())
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex8:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Adding(X1,X2,X3)
+        {
+            document.write("X1_value is:"+X1)
+            document.write("<br>")
+            document.write("X2_value is:"+X2)
+            document.write("<br>")
+            document.write("X3_value is:"+X3)
+            document.write("<br>")
+            return X1+X2+X3
+        }
+        obj1=Adding(2,4,10)
+        document.write("Sum of X1|X2|X3 is:"+obj1)
+    
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+->****Rest Parameter ****:
+==================
+                           JavaScript supports Rest Parameter.We can define or declare
+...followed by variable_name.The main objective of rest_parameter to read zero or more then one number of arguments and perform the operations as 
+per the application reqn.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1(...X1)
+        {
+            document.write(X1+"<br>")
+        }
+        Test_Case1()
+        Test_Case1(1)
+        Test_Case1(1,2)
+        Test_Case1(1,2,3)
+        Test_Case1(1,2,3,4)
+        Test_Case1(1,2,3,4,5)
+      
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Test_Case1(...X1)
+        {
+           var S1=0 
+           for(var a=0;a<X1.length;a++)
+             {
+                S1=S1+X1[a]
+             }
+          document.write("Sum of any_number of arguments:"+S1+"<br>")
+        }
+        Test_Case1()
+        Test_Case1(1)
+        Test_Case1(1,2)
+        Test_Case1(1,2,3)
+        Test_Case1(1,2,3,4)
+        Test_Case1(1,2,3,4,5)
+      
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+While working with functional Programming in JavaScript there are two
+type of variables are there 
+
+->global variable
+->local variable
+
+->global variable:
+============
+                               global variable can be define or declare in JavaScript using 
+var keyword followed by variable_name.The scope of the global variable we
+can access any_where.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[21,22,23,24,25,26]
+        function T1()
+         {
+            for(var a=0;a<ages.length;a++)
+             {
+                document.write(ages[a]+"<br>")
+             }
+         }
+         function T2()
+         {
+             for(var a=0;a<ages.length;a++)
+             {
+                document.write(a+"<br>")
+             }
+         }
+         T1()
+         T2()
+      
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+local variable:
+=========
+               In JavaScript local variable can be define or declare inside the function using let keyword followed variable_name.The scope of the local
+variable with_in function not outsite the function.
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function T1() 
+        {
+             let name="Jessica_1"
+             document.write("Name is:"+name+"<br>")
+        }
+        function T2() 
+         {
+            document.write("Name is:"+name)
+         }
+         T1()
+         T2()
+       
+      
+
+
+     
+       
+    </script>
+    
+</body>
+</html>
+
+
+
+

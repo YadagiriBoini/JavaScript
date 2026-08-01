@@ -1,0 +1,310 @@
+Control statement in JavaScript:
+======================
+JavaScript supports Following types of control statement which are as follows
+
+->if statement 
+->nested if statement
+->if-else statement 
+->if-else if-else statement
+->for loop
+->nested for loop
+->for in loop
+->forEach loop
+->while loop
+->do while loop
+->nested while loop
+->break 
+->continue statement
+->switch statement
+
+
+->if statement:
+==========
+JavaScript supports if statement.If 'if' block condition is satisfied then if block will be
+executed.Following is the syntax for if statement.
+
+if(condition)
+{
+---
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var str1=window.prompt("Enter the Character:")
+        if(str1=="A")
+    {
+        document.write(str1+": It is uppercase character")
+    }
+    </script>
+    
+</body>
+</html>
+
+
+->nested if statement:
+================
+JavaScript supports nested if statement.It is also known as inner if statement.Nested if statement/Inner if statement can be define or declare if statement inside the another 
+if statement then it is said to nested if statement.
+
+if(condition)
+{
+    if(condition)
+       {
+         ---
+       }
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Name=window.prompt("Enter the name:")
+        var DOB=window.prompt("Enter the DOB:")
+        if(Name=="Jessica")
+    {
+             document.write("My_name is:"+Name+"<hr>")
+             if(DOB=="1/1/2001")
+               {
+                 document.write("My_date of birth is:"+DOB+"<hr>")
+               }
+    }
+ 
+    </script>
+    
+</body>
+</html>
+
+
+if-else:
+=====
+         JavaScript supports if-else statement.If 'if' condition is satisfied then if block will be
+executed otherwise else block will be executed.Following is the syntax for if-else statement
+
+if(condition)
+{
+ ---
+}
+else 
+{
+---
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var P1=window.prompt("Enter the Password")
+        var P2=window.prompt("Enter the Confirm_Password:")
+        if(P1=="ABC_12345" && P2=="ABC_12345")
+    {
+        document.write(P1+" "+P2+": Valid Password"+"<hr>")
+    }
+    else 
+    {
+        document.write(P1+" "+P2+" : In_valid Password"+"<hr>")
+    }
+
+ 
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var P1=window.prompt("Enter the Password")
+        var P2=window.prompt("Enter the Confirm_Password:")
+        if(P1==P2)
+    {
+        document.write(P1+" "+P2+": Valid Password"+"<hr>")
+    }
+    else 
+    {
+        document.write(P1+" "+P2+" : In_valid Password"+"<hr>")
+    }
+
+ 
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var number_1=Number(window.prompt("Enter the number:"))
+        if(number_1>=0)
+    {
+           document.write(number_1+": It is Positive_number"+"<hr>")
+    }
+    else 
+    {
+          document.write(number_1+": It is Negative number:"+"<hr>")
+    }
+
+
+ 
+    </script>
+    
+</body>
+</html>
+
+Ex4:
+===
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var number_1=Number(window.prompt("Enter the number:"))
+        if(number_1%2==0)
+    {
+           document.write(number_1+": It is Even_Number"+"<hr>")
+    }
+    else 
+    {
+          document.write(number_1+": It is Odd_Number:"+"<hr>")
+    }
+
+
+ 
+    </script>
+    
+</body>
+</html>
+
+
+if-else if -else:
+=========
+                 JavaScript supports if-else if-else.The main objective of if-else if else is to check the more then one condition.
+
+if(condition)
+{
+  ---
+}
+else if(condition)
+{
+  ---
+}
+else if(condition)
+{
+---
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var technologies=window.prompt("Enter the Technology:")
+        if(technologies=="JavaScript")
+    {
+        document.write(technologies+": Meant for client_side validation"+"<hr>")
+    }
+    else if(technologies=="TypeScript")
+    {
+         document.write(technologies+": It is widely in AI based microsoft application"+"<hr>")
+    }
+    else if(technologies=="Angular")
+    {
+        document.write(technologies+": Meant for ERP application Development"+"<hr>")
+    }
+    else if(technologies=="React")
+    {
+        document.write(technologies+": Meant for UI Compoment in SPA"+"<hr>")
+        
+    }
+
+
+ 
+    </script>
+    
+</body>
+</html>

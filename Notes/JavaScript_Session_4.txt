@@ -1,0 +1,390 @@
+->An Object data type:
+===============
+JavaScript supports An object data type.An object data can be represent as name/values pair.In JavaScript we can define or declare an object data type using following ways
+
+->Using an object literal
+->Using an Instance of an object
+->Using an Object based constructor
+
+
+->Using an object literal:
+=================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Information={
+            "Pid":1001,
+            "Pname":"Mobile_1",
+            "Price":29000.0,
+            "Company":"Samsung",
+        }
+        document.write("Pid is:"+Product_Information.Pid)
+        document.write("<hr>")
+        document.write("Pname is:"+Product_Information.Pname)
+        document.write("<hr>")
+        document.write("Price is:"+Product_Information.Price)
+        document.write("<hr>")
+        document.write("Company is:"+Product_Information.Company)
+    </script>
+    
+</body>
+</html>
+
+
+->Using an Instance of an object:
+=======================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Emp_Information = new Object() 
+        Emp_Information.Eid=1001 
+        Emp_Information.Ename="Jessica_1"
+        Emp_Information.Esal=23000.0 
+        Emp_Information.Company="HCL"
+        console.log(Emp_Information.Eid)
+        console.log(Emp_Information.Ename)
+        console.log(Emp_Information.Esal)
+        console.log(Emp_Information.Company)
+     
+    </script>
+    
+</body>
+</html>
+
+
+->Using an Object based constructor:
+==========================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        function Employees(Eid,Ename,Esal)
+        {
+            this.Eid=Eid 
+            this.Ename=Ename 
+            this.Esal=Esal
+        }
+        var e1 =  new Employees(1001,"Jessica_1",19000)
+        document.write(e1.Eid+" "+e1.Ename+" "+e1.Esal)
+    </script>
+
+    
+</body>
+</html>
+
+
+An operators in JavaScript:
+==================
+JavaScript supports an operator.An operator is symbol which is used to perform the 
+operations as per the application reqn.In JavaScript We do have following types of 
+opeators which are as follows
+
+->Arithmetic operators
+->Assignment operators
+->Logical operators
+->Comparision operators
+->Bitwise operators
+->Ternary operator
+
+->Arithmetic operators:
+================
++/*///%/-/**/++/--
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var b=Number(window.prompt("Enter the value of b:"))
+        var res1=a+b 
+        var res2=a-b 
+        var res3=a*b 
+        var res4=a/b 
+        var res5=a**b 
+        document.write(res1+" "+res2+" "+res3+" "+res4+" "+res5)
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var res1=a++ 
+        document.write("The result_set is:"+res1)
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var res1=++a
+        document.write("The result_set is:"+res1)
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var res1=a--
+        document.write("The result_set is:"+res1)
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var res1=--a
+        document.write("The result_set is:"+res1)
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+->Assignment operators:
+=================
+a=a+b             ----->  a+=b  ---->Assignmemt operator
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var b=Number(window.prompt("Enter the value of b:"))
+        a+=b 
+        document.write("The result_set is:"+a)
+        
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var b=Number(window.prompt("Enter the value of b:"))
+        document.write("The result_set is:",a+=b)
+        
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var a=Number(window.prompt("Enter the value of a:"))
+        var b=Number(window.prompt("Enter the value of b:"))
+        a+=b 
+        document.write('Sum is:'+a)
+        document.write("<br>")
+        a*=b 
+        document.write("Mul is:"+a)
+        document.write("<br>")
+        a/=b 
+        document.write("Division is:"+a)
+        document.write("<br>")
+    
+        
+      
+      
+    </script>
+
+    
+</body>
+</html>
+
+
+->Logical operators:
+==============
+JavaScript supports Logical operators.The main objective of logical operators is to perform 
+logical operations in the application development.Following are the Logical operators in JavaScript
+
+
+->Logical and   ---->  && 
+->Logical or     -----> ||
+->Logical not    -----> !
+
+
+

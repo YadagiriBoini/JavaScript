@@ -1,0 +1,1 @@
+document.write(" Script tag in the another file with .js extension ");

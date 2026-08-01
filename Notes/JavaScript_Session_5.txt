@@ -1,0 +1,615 @@
+->Bitwise left_shift operator(<<):
+======================
+X1=20 
+X2=X1<<2
+
+
+20  ---->  1  0    1   0   0 
+                    apply the 2 0's left_side
+
+                       0    0    1    0    1    0    0 
+ 
+                                     1   0   1   0   0   0   0 
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var X1=20 
+        var X2=X1<<2 
+        document.write("Before_Operations:"+X1)
+        document.write("<hr>")
+        document.write("After_Operations:"+X2)
+    </script>
+    
+</body>
+</html>
+
+->Bitwise right_shift operator(>>):
+=======================
+
+X1=20 
+X2=X1>>2 
+
+20  -----> 1  0   1   0   0  
+
+                   apply 2 0's left_side 
+
+                        0    0    1   0    1   0   0
+
+                             0    0    0   0   1    0   1
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var X1=20 
+        var X2=X1>>2 
+        document.write("Before_Operations:"+X1)
+        document.write("<hr>")
+        document.write("After_Operations:"+X2)
+    </script>
+    
+</body>
+</html>
+
+->Control statements in JavaScript:
+========================
+                                               JavaScript supports control statements.Following 
+are the control statements in JavaScript
+
+->if statement 
+->nested if statement
+->if-else statemeny
+->if-else if else statement 
+->for loop 
+->for in loop 
+->forEach loop
+->nested for loop
+->while loop 
+->do while loop
+->break 
+->continue 
+->switch statement
+
+->if statement:
+==========
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var str1=window.prompt("Enter the Character from A to A:")
+        if(str1=="A")
+         {
+            document.write(str1+" : It is uppercase character")
+            document.write("<hr>")
+         }
+    </script>
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Mobile_Number=window.prompt("Enter the Mobile_Number:")
+        if(Mobile_Number=="+91-9090123123" || Mobile_Number=="9090123123" || Mobile_Number=="919090123123")
+           {
+            document.write(Mobile_Number+": It is valid_indian_mobile_number")
+            document.write("<hr>")
+           }  
+    </script>
+
+    
+</body>
+</html>
+
+
+Nested if statement:
+=============
+                    JavaScript supports nested if statement.It is also known as inner 
+if statement.Nested if statement or Inner if statement can represent as if 
+we are defining or declaring a if statement inside another if statement then
+it said to be Nested if statement.
+
+if(condition)
+    {
+         ----
+        if(condition)
+           {
+                ----
+           }
+   }
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var First_Name=window.prompt("Enter the First_Name:")
+        var Last_Name=window.prompt("Enter the Last_Name:")
+        if(First_Name=="Jessica_1")
+             {
+                document.write("My First_Name is:"+First_Name)
+                document.write("<hr>")
+                if(Last_Name=="Adam_1") 
+                   {
+                    document.write("My Last_Name is:"+Last_Name)
+                    document.write("<hr>")
+                   }
+             }
+     </script>
+  
+
+    
+</body>
+</html>
+
+if-else statement in JavaScript:
+====================
+                                JavaScript supports if-else statement.If 'if condition' is true then if block will be executed otherwise else block will be executed.
+
+if(condition)
+  {
+     ---
+  }
+else 
+    {
+       ---
+    }
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var Number_1=Number(window.prompt("Enter the number:"))
+        if(Number_1>=0)
+           {
+            document.write(Number_1+": It is Positive_Number")
+            document.write("<hr>")
+           }
+       else 
+         {
+            document.write(Number_1+": It is a Negative_Number")
+            document.write("<hr>")
+         }
+     
+     </script>
+  
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var Number_1=Number(window.prompt("Enter the number:"))
+        if(Number_1%2==0)
+           {
+            document.write(Number_1+": It is a Even_Number")
+            document.write("<hr>")
+           }
+       else 
+         {
+            document.write(Number_1+": It is Odd_Number")
+            document.write("<hr>")
+         }
+     
+     </script>
+  
+
+    
+</body>
+</html>
+
+if-else if -else:
+==========
+                  JavaScript supports if-else if-else.The main objective of if-elseif else is to check more then one condition as per the application reqn.Following is the syntax for if-else if-else 
+
+if(condition) 
+{
+   ---
+}
+else if(condition)
+{
+  ---
+}
+else if(condition)
+ {
+  --
+}
+else 
+{
+ ---
+}
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var technology=window.prompt("Enter the Technology:")
+        if(technology=="JavaScript") 
+           {
+            document.write(technology+": Meant for Client_side validation")
+            document.write("<hr>")
+           }
+        else if(technology=="TypeScript")
+          {
+            document.write(technology+": Meant for angular application logic")
+            document.write("<hr>")
+          }
+          else if(technology=="Angular")
+             {
+                document.write(technology+": Meant for ERP application Development")
+                document.write("<hr>")
+             }
+        else if(technology=="React")
+            {
+                document.write(technology+": Meant for UI component Development")
+                document.write("<hr>")
+            }
+            else 
+            {
+                document.write("Enter the Correct technology")
+                document.write("<hr>")
+            }
+      
+     </script>
+  
+
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+         var a=Number(window.prompt("Enter the value of a:"))
+         var b=Number(window.prompt("Enter the value of b:"))
+         var c=Number(window.prompt("Enter the value of c:"))
+         if(a>b && a>c)
+            {
+                document.write(a+": Largest_Number")
+                document.write("<hr>")
+            }
+        else if(b>c)
+           {
+              document.write(b+": Largest_Number")
+              document.write("<hr>")
+           }
+           else 
+             {
+                document.write(c+": Largest_Number")
+                document.write("<hr>")
+             }
+     </script>
+  
+
+    
+</body>
+</html>
+
+for loop:
+=====
+          JavaScript supports for loop.The main objective of for loop if you 
+want to execute number of statements number of time if our data is in 
+sequence or if we know the limit of our data then we can go with for loop
+in JavaScript
+
+for(condition)
+  {
+     ---
+  }
+
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        for(var a=1;a<=10;a++)
+         {
+            document.write(a+"<br>")
+         }
+        
+     </script>
+  
+
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var ages=[21,31,41,22,32,42,23,33,43]
+        for(var a=0;a<ages.length;a++)
+          {
+            document.write("The result_set is:"+a)
+            document.write("<hr>")
+          }
+    
+        
+     </script>
+  
+
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var ages=[21,31,41,22,32,42,23,33,43]
+        for(var a=0;a<ages.length;a++)
+          {
+            document.write("The result_set is:"+ages[a])
+            document.write("<hr>")
+          }
+    
+        
+     </script>
+  
+
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var ages=[21,31,41,22,32,42,23,33,43]
+        for(var a=0;a<ages.length;a++)
+          {
+            document.write(a+"----"+ages[a])
+            document.write("<hr>")
+          }
+    
+        
+     </script>
+  
+
+    
+</body>
+</html>
+
+
+Ex4:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var ages=[21,31,41,22,32,42,23,33,43]
+        for(var a=0;a<ages.length;a++)
+           {
+            if(ages[a]%2==0)
+              {
+                document.write("Even_Ages are:"+ages[a])
+                document.write("<hr>")
+              }
+
+           }
+        
+    
+        
+     </script>
+  
+
+    
+</body>
+</html>
+
+
+Ex5:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Sessions</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Sessions</tt></h1>
+    </center>
+    <hr>
+     <script>
+        var ages=[21,31,41,22,32,42,23,33,43]
+        var S1=0
+        for(var a=0;a<ages.length;a++)
+           {
+           
+                     S1=S1+ages[a]
+           }
+           document.write("Sum of ages:"+S1)
+        
+    
+        
+     </script>
+  
+
+    
+</body>
+</html>
+

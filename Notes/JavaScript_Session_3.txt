@@ -1,0 +1,297 @@
+->Non Primitive data type:
+==================
+JavaScript supports following non primitive data types which as follows
+
+->An array data type
+->An Object data type
+->Regex object data type
+
+
+->An array data type:
+==============
+JavaScript supports An array data type which means it can be represent as it can store the  collection of homogenious/Hetrogenious elements.In JavaScript an array
+data type be define or declare in three different ways
+
+->Using an array literal
+->Using Instance of an Object
+->Using array constructor
+
+->Using an array literal:
+================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var ages=[19,20,21,22,23,24,25]
+        document.write("Ages are:"+ages)
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Information=[1001,"Mobile_1",23000.0,"Samsung"]
+        document.write(Product_Information)
+     
+    </script>
+    
+</body>
+</html>
+
+->Using Instance of an Object:
+===================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Employees= new Array()
+        Employees[0]=1001 
+        Employees[1]="Jessica_1"
+        Employees[2]=129000.0 
+        Employees[3]="Samsung"
+        document.write(Employees)
+
+
+   
+     
+    </script>
+    
+</body>
+</html>
+
+
+->Using array constructor:
+=================
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var Product_Information= new Array(1001,"Mobile_1",98000.0,"Apple")
+        document.write(Product_Information)
+        document.write("<hr>")
+        document.write(Product_Information[0])
+        document.write("<hr>")
+        document.write(Product_Information[1])
+        document.write("<hr>")
+        document.write(Product_Information[2])
+        document.write("<hr>")
+        document.write(Product_Information[3])  
+    </script>
+    
+</body>
+</html>
+
+->push()
+->pop()
+
+->push():
+======
+          It is a predefine function/method in JavaScript.The main objective of 
+push() function is add one or more then one one element as per the application
+reqn.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[11000,12000,13000,14000]
+        document.write("Before_Operations:"+data_1)
+        document.write("<hr>")
+        data_1.push(15000)
+        document.write("After_operations:"+data_1)
+     
+      
+      
+
+   
+     
+    </script>
+    
+</body>
+</html>
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[11000,12000,13000,14000]
+        document.write("Before_Operations:"+data_1)
+        document.write("<hr>")
+        data_1.push(15000,16000,17000,18000,19000)
+        document.write("After_operations:"+data_1)
+    </script>
+    
+</body>
+</html>
+
+->pop():
+=====
+          It is a function/method in JavaScript.The main objective of pop() function/method is remove/delete the last element of an array.
+
+Ex1:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[11000,12000,13000,14000]
+        document.write("Before_Operations:"+data_1)
+        document.write("<hr>")
+        data_2=data_1.pop()
+        document.write("Remove/Delete Element is:"+data_2)
+        document.write("<hr>")
+        document.write("After_Operations:"+data_1)
+      
+    </script>
+    
+</body>
+</html>
+
+
+Ex2:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[11000,12000,13000,14000,15000]
+        document.write("Before_Operations:"+data_1)
+        document.write("<hr>")
+        data_2=data_1.pop(0)
+        document.write("Remove/Delete Element is:"+data_2)
+        document.write("<hr>")
+        document.write("After_Operations:"+data_1)
+      
+    </script>
+    
+</body>
+</html>
+
+
+Ex3:
+===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Session</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1><tt>JavaScript_Session</tt></h1>
+    </center>
+    <hr>
+    <script>
+        var data_1=[11000,12000,13000,14000,15000,16000]
+        document.write("Before_Operations:"+data_1)
+        document.write("<hr>")
+        data_2=data_1.pop(0,1,2,3)
+        document.write("Remove/Delete Element is:"+data_2)
+        document.write("<hr>")
+        document.write("After_Operations:"+data_1)
+      
+    </script>
+    
+</body>
+</html>
