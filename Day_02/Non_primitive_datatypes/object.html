@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <hr>
+    <center>
+        <h1>JavaScript</h1>
+    </center>
+    <hr>
+
+
+    <script>
+
+
+        // Object Literal
+        /*
+        let std_info = {
+            "id":101,
+            "name":"ram",
+            "Makrs":99
+        }
+        document.write(`Student id: ${std_info.id}`);
+        document.write("<br>");
+        document.write(`Student name: ${std_info.name}`);  */
+
+
+
+        // object instance
+        /*
+        let std_info = new Object();
+        std_info.id = 101;
+        std_info.name = "yada";
+        std_info.marks = 90
+        document.write(`Student id: ${std_info.id}`);
+        document.write("<br>");
+        document.write(`Student name: ${std_info.name}`);   */
+
+
+
+        // Object Constructor
+
+        function std_info(id,name,marks){
+            this.id = id,
+            this.name=name,
+            this.marks=marks
+        }
+        
+        let s1 = new std_info(101,"sam",89)
+        document.write(`Student id: ${s1.id}`);
+        document.write("<br>");
+        document.write(`Student name: ${s1.name}`);       
+
+
+    </script>
+
+
+</body>
+</html>
