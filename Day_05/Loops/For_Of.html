@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <hr />
+    <center>
+      <h1>JavaScript</h1>
+    </center>
+    <hr />
+
+    <script>
+
+        // array
+        let ages=[21,22,23,24,25]
+        for(let i of ages){
+            document.write(i,"<br>")
+        }
+        document.write("<br>")
+
+
+        // set
+        let colors = new Set(["Red","Green","Blue"]);
+        document.write(colors)
+        document.write("<br><br>")
+        for(let color of colors){
+            document.write(color,"<br>");
+        }
+        document.write("<br>")
+
+
+
+        // map
+        let student = new Map([
+            ["Name","Rahul"],
+            ["Age",21]
+        ]);
+        for(let entry of student){
+            document.write(entry,"<br>");
+        }
+    </script>
+  </body>
+</html>
