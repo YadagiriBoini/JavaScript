@@ -1,160 +1,99 @@
-# 🚀 JavaScript Learning Journey
+# JavaScript Learning Journey 🚀
 
-This repository contains my day-wise JavaScript learning notes, programs, and practice exercises.
+This repository contains my day-by-day JavaScript learning journey, including concepts, examples, practice programs, and mini projects.
 
 ---
-# JavaScript Learning Journey
 
-## Day 1 — JavaScript Fundamentals
-- Introduction to JavaScript
-- JavaScript Features
-- JavaScript Execution
+## 📅 Day 1 — JavaScript Basics
+- Dialog Boxes
+- Different Ways of Using JavaScript Files
+- Type Casting
 - Variables
-- `var`, `let`, and `const`
-- Data Types
+
+---
+
+## 📅 Day 2 — Data Types & Operators
 - Primitive Data Types
 - Non-Primitive Data Types
-- Type Conversion
-- Type Coercion
 - Operators
-- Arithmetic Operators
-- Assignment Operators
-- Increment and Decrement Operators
-- Basic JavaScript Programs
 
 ---
 
-## Day 2 — JavaScript Fundamentals & Control Flow
-- Expressions
-- Statements
-- Comparison Operators
-- Logical Operators
+## 📅 Day 3 — Operators & Control Statements
+- Operators
+- Control Statements
 - Conditional Statements
-- `if`
-- `if...else`
-- `else if`
-- Nested `if`
-- Ternary Operator
-- Truthy and Falsy Values
-- Basic Conditional Programs
-
----
-
-## Day 3 — JavaScript Operators & Control Statements
 - Comparison Operators
-- Logical Operators
 - Ternary Operator
 - Bitwise Operators
-- Bitwise AND (`&`)
-- Bitwise OR (`|`)
-- Bitwise XOR (`^`)
-- Bitwise NOT (`~`)
-- Left Shift (`<<`)
-- Right Shift (`>>`)
-- Conditional Logic
-- Operator Practice
 
 ---
 
-## Day 4 — Loops
+## 📅 Day 4 — Control Statements & Loops
+- Control Statements
 - Introduction to Loops
 - `for` Loop
-- Initialization
-- Condition
-- Update
-- Array Traversal using `for`
-- Even and Odd Number Programs
-- Sum of Numbers
-- Factorial
-- Multiplication Table
-- Finding Largest Element
-- Finding Smallest Element
-- Counting Elements
-- Reverse Array Traversal
-- Positive and Negative Number Programs
+- Nested Loops
+
+---
+
+## 📅 Day 5 — JavaScript Loops
 - `while` Loop
 - `do...while` Loop
 - `for...of` Loop
 - `for...in` Loop
 - `forEach()` Method
+- Nested `for` Loop
+- Nested `while` Loop
 
 ---
 
-## Day 5 — Loop Practice & Iteration
-- Loop Problem Solving
-- Array Traversal
-- `for` vs `while`
-- `while` vs `do...while`
-- `for` vs `for...of`
-- `for...of` vs `for...in`
-- `forEach()` vs `for...of`
-- Loop-based Array Problems
-- Nested Loop Concepts
-- Interview-oriented Loop Problems
-
----
-
-## Day 6 — Control Statements & Regular Expressions
-### Control Statements
+## 📅 Day 6 — Regular Expressions & Control Statements
 - `break` Statement
 - `continue` Statement
-- `break` vs `continue`
 - `switch` Statement
-- `case`
-- `default`
-- `switch` with `break`
-- Fall-through
-- `if...else` vs `switch`
-### Regular Expressions
-- Introduction to Regular Expressions
-- Regex Literals
-- `RegExp` Object
-- `match()`
-- `search()`
-- `i` Flag
-- `g` Flag
-- `i` + `g` Flags
+- Regular Expressions (Regex)
+- Regex Object
+- `match()` Method
+- `search()` Method
+- Regex Flags
+  - `i`
+  - `g`
 - Character Classes
-- `[ABC]`
-- `[a-z]`
-- `[A-Z]`
-- `[0-9]`
-- `[a-zA-Z]`
-- `[a-zA-Z0-9]`
-- `[^a-zA-Z0-9]`
+  - `[ABC]`
+  - `[a-z]`
+  - `[A-Z]`
+  - `[0-9]`
+  - `[a-zA-Z]`
+  - `[a-zA-Z0-9]`
+  - `[^a-zA-Z0-9]`
 
 ---
 
-## Day 7 — Advanced Regular Expressions & Functions
+## 📅 Day 7 — Regex & Functions
 ### Regular Expressions
-- Predefined Regex Character Classes
-- `\d`
-- `\D`
-- `\s`
-- `\S`
-- `\w`
-- `\W`
+- Predefined Regex Classes
+  - `\d`
+  - `\D`
+  - `\s`
+  - `\S`
+  - `\w`
+  - `\W`
 - Regex Quantifiers
-- `+`
-- `*`
-- `?`
-- `{n}`
-- `{n,m}`
-- `{n,}`
-- Dot (`.`)
+  - `+`
+  - `*`
+  - `?`
+  - `{n}`
+  - `{n,m}`
+  - `{n,}`
+- Regex Dot (`.`)
 - Start Anchor (`^`)
 - End Anchor (`$`)
-- Regex Pattern Validation
+- Regex Projects
 ### Functions
 - Introduction to Functions
 - Function Declaration
 - Function Expression
-- Anonymous Function
-- Arrow Function
+- Anonymous Functions
+- Arrow Functions
 - Function Calling
-
-
-
-
-
-
