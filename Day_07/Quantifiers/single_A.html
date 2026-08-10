@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <script>
+
+        let email = window.prompt("Enter Email: ")
+        let res1 = email.match(/A/g)               // Search only single A 
+        
+        if(res1!=null){
+            document.write("Single A: ",res1)    // only Capital
+            document.write("<br>")
+            document.write(res1.length)
+        }else{
+            document.write("Not Present")
+        }
+
+    </script>
+</body>
+</html>

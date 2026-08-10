@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <script>
+
+
+        let mobile_num = window.prompt("Enter the Mobile Number: ")
+        let res1 = mobile_num.match(/^[+]{1}[9]{1}[1]{1}-[6-9]{1}\d{9}$/g);
+
+        if( mobile_num != null){
+            document.write("Valid Mobile Number:  ",res1);
+        }else{
+            document.write("Invalid")
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <script>
+
+
+        let gmail = window.prompt("Enter the Gmail: ")
+        let res1 = gmail.match(/\w[A-Za-z0-9._]*@(gmail|yahoo|[a-z]*)([.]com|[.][a-z]*)/g);
+
+        if( gmail != null){
+            document.write("Valid Gmail:  ",res1);
+        }else{
+            document.write("Invalid")
+        }
+
+
+    </script>
+</body>
+</html>
