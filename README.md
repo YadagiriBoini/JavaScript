@@ -1,142 +1,99 @@
-# 🚀 JavaScript Learning Journey
+# JavaScript Learning Journey 🚀
 
-This repository contains my day-wise JavaScript learning notes, programs, and practice exercises.
+This repository contains my day-by-day JavaScript learning journey, including concepts, examples, practice programs, and mini projects.
 
 ---
 
-# 📅 Day 1 - JavaScript Basics
-- Introduction to JavaScript
-- Features of JavaScript
-- Applications of JavaScript
-- Ways to Include JavaScript
-  - Internal JavaScript (Inside `<body>`)
-  - Internal JavaScript (Inside `<head>`)
-  - External JavaScript (`.js` File)
-- Output Methods
-  - `document.write()`
-  - `console.log()`
-- Variables
-  - `var`
-  - `let`
-  - `const`
+## 📅 Day 1 — JavaScript Basics
 - Dialog Boxes
-  - `alert()`
-  - `confirm()`
-  - `prompt()`
-- Introduction to Type Casting
-  - `parseInt()`
-  - `parseFloat()`
-  - `Number()`
+- Different Ways of Using JavaScript Files
+- Type Casting
+- Variables
 
 ---
 
-# 📅 Day 2 - Type Casting, Data Types & Arrays
-
-### Type Casting
-- Implicit Type Conversion
-- Explicit Type Conversion
-- `parseInt()`
-- `parseFloat()`
-- `Number()`
-
-### Data Types
-#### Primitive Data Types
-- Number
-- String
-- Boolean
-- Null
-- Undefined
-#### Non-Primitive Data Types
-- Array
-- Object (Introduction)
-### typeof Operator
-- Checking the data type of variables
-
-### Arrays
-- Introduction to Arrays
-- Features of Arrays
-- Creating Arrays
-  - Array Literal
-  - `new Array()`
-  - Array Constructor
-- Accessing Array Elements
-- Updating Array Elements
-- Array Index
-- `length` Property
-- Nested Arrays
-### Array Methods
-- `push()`
-- `pop()`
-
+## 📅 Day 2 — Data Types & Operators
+- Primitive Data Types
+- Non-Primitive Data Types
+- Operators
 
 ---
 
+## 📅 Day 3 — Operators & Control Statements
+- Operators
+- Control Statements
+- Conditional Statements
+- Comparison Operators
+- Ternary Operator
+- Bitwise Operators
 
+---
 
-# 📅 Day 3 - Objects & Operators
+## 📅 Day 4 — Control Statements & Loops
+- Control Statements
+- Introduction to Loops
+- `for` Loop
+- Nested Loops
 
-### Object Data Type
-- Introduction to Objects
-- Features of Objects
-- Object Properties (Key-Value Pairs)
-- Creating Objects
-  - Object Literal
-  - `new Object()`
-  - Constructor Function
-- Accessing Object Properties
-  - Dot Notation
-  - Bracket Notation
-- Adding New Properties
-- Updating Properties
-- Deleting Properties
-- Nested Objects
-- Difference Between Objects and Arrays
+---
 
-### Operators in JavaScript
-#### Arithmetic Operators
-- Addition (`+`)
-- Subtraction (`-`)
-- Multiplication (`*`)
-- Division (`/`)
-- Modulus (`%`)
-- Exponentiation (`**`)
-- Increment (`++`)
-  - Pre Increment
-  - Post Increment
-- Decrement (`--`)
-  - Pre Decrement
-  - Post Decrement
-- Operator Precedence
-#### Assignment Operators
-- Assignment (`=`)
-- Addition Assignment (`+=`)
-- Subtraction Assignment (`-=`)
-- Multiplication Assignment (`*=`)
-- Division Assignment (`/=`)
-- Modulus Assignment (`%=`)
-- Exponent Assignment (`**=`)
-#### Comparison Operators
-- Equal (`==`)
-- Strict Equal (`===`)
-- Not Equal (`!=`)
-- Strict Not Equal (`!==`)
-- Greater Than (`>`)
-- Less Than (`<`)
-- Greater Than or Equal (`>=`)
-- Less Than or Equal (`<=`)
-#### Logical Operators
-- Logical AND (`&&`)
-- Logical OR (`||`)
-- Logical NOT (`!`)
-- Truthy and Falsy Values
-- Short-Circuit Evaluation
-#### Ternary Operator
-- Conditional (Ternary) Operator (`condition ? trueExpression : falseExpression`)
-- Nested Ternary Operator
-#### Bitwise Operators
-- Bitwise AND (`&`)
-- Bitwise OR (`|`)
-- Bitwise XOR (`^`)
-- Bitwise NOT (`~`)
-- Left Shift (`<<`)
-- Right Shift (`>>`)
+## 📅 Day 5 — JavaScript Loops
+- `while` Loop
+- `do...while` Loop
+- `for...of` Loop
+- `for...in` Loop
+- `forEach()` Method
+- Nested `for` Loop
+- Nested `while` Loop
+
+---
+
+## 📅 Day 6 — Regular Expressions & Control Statements
+- `break` Statement
+- `continue` Statement
+- `switch` Statement
+- Regular Expressions (Regex)
+- Regex Object
+- `match()` Method
+- `search()` Method
+- Regex Flags
+  - `i`
+  - `g`
+- Character Classes
+  - `[ABC]`
+  - `[a-z]`
+  - `[A-Z]`
+  - `[0-9]`
+  - `[a-zA-Z]`
+  - `[a-zA-Z0-9]`
+  - `[^a-zA-Z0-9]`
+
+---
+
+## 📅 Day 7 — Regex & Functions
+### Regular Expressions
+- Predefined Regex Classes
+  - `\d`
+  - `\D`
+  - `\s`
+  - `\S`
+  - `\w`
+  - `\W`
+- Regex Quantifiers
+  - `+`
+  - `*`
+  - `?`
+  - `{n}`
+  - `{n,m}`
+  - `{n,}`
+- Regex Dot (`.`)
+- Start Anchor (`^`)
+- End Anchor (`$`)
+- Regex Projects
+### Functions
+- Introduction to Functions
+- Function Declaration
+- Function Expression
+- Anonymous Functions
+- Arrow Functions
+- Function Calling
