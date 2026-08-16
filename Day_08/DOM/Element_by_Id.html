@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-DOM</title>
+</head>
+<body>
+    <center>
+        <fieldset>
+            <legend>DOM</legend>
+            <hr>
+            <center>
+
+                <form action="" method="post" onsubmit="return display()">
+                    <label for="">Username</label>&nbsp;
+                    <input type="text" placeholder="Username" id="A">
+                    <br><br>
+                    <input type="submit" value="Validate">
+                </form>
+            </center>
+        </fieldset>
+    </center>
+
+    <script>
+         function display(){
+            let username = document.getElementById("A").value
+            window.alert("Username is: "+username)
+            return false
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <center>
+    <table border="5">
+        <form action="" method="post">
+            <tr>
+                <td><input type="submit" value="YEAR" onclick="t1()">
+                    <input type="submit" value="Month" onclick="t2()">
+                    <input type="submit" value="DAY" onclick="t3()">
+                    <input type="submit" value="HOUR" onclick="t4()">
+                    <input type="submit" value="MINTUES" onclick="t5()">
+                    <input type="submit" value="SECONDS" onclick="t6()">
+                </td>
+            </tr>
+        </form>
+    </table></center>
+
+    <script>
+
+        function t1(){
+            let d1= new Date()
+            window.alert("Year is: "+d1.getFullYear())
+        }
+
+        function t2(){
+            let d2 = new Date()
+            window.alert("Month is: "+d2.getMonth());
+        }
+
+        function t3(){
+            let d3 = new Date()
+            window.alert("Day is: "+d3.getDate());
+        }
+        
+        function t4(){
+            let d4 = new Date()
+            window.alert("Hour is: "+d4.getHours());
+        }
+
+        function t5(){
+            let d5 = new Date()
+            window.alert("MIntues is: "+d5.getMinutes())
+        }
+
+        function t6(){
+            let d6 = new Date()
+            window.alert("Seconds :"+d6.getSeconds())
+        }
+        
+    </script>
+</body>
+</html>

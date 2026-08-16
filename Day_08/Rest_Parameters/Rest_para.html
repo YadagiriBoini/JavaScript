@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <script>
+
+        function test(...a){
+            document.write(a,"<br>")
+        }
+
+        function add(...b){
+            let s1=0
+            for(let i=0; i<b.length; i++){
+                s1= s1+b[i]
+            }
+            document.write("Sum is:",s1,"<br>")
+        }
+        test()
+        test(10)
+        test(10,20)
+        test(10,20,30)
+        document.write("<br>")
+        add(10)
+        add(10,20)
+        add(10,20,30)
+
+    </script>
+</body>
+</html>

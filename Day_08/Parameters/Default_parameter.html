@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>
+        <center>
+            JavaScript
+        </center>
+    </h1><hr>
+
+    <script>
+
+        function product_info(id,name,price=25000){                 // value at the time of function creation = default parametrs 
+            document.write("===Product_Information===<br>");
+            document.write(id,"  ",name,"  ",price);
+        }
+        product_info(123,"Samsung",20000)                    // Actual Parameters have more priority
+
+    </script>
+</body>
+</html>
