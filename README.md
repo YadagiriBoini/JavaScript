@@ -145,3 +145,22 @@ This repository contains my day-by-day JavaScript learning journey, including co
 - Displaying Validation Messages using `innerHTML`
 - Basic Form Submission Handling
 - Simple Form Validation Project
+
+---
+
+## 📅 Day 10 — Client-Side Validation
+- Client-Side Validation
+- Validation using Regular Expressions (Regex)
+- Regex `match()` Method
+- Password Validation
+- Confirm Password Validation
+- `onsubmit()` Event
+- `onclick()` Event
+- Difference between `onsubmit()` and `onclick()`
+- Radio Button Validation
+- `.checked` Property
+- Checkbox Validation
+- Select / Dropdown Validation
+- `.selectedIndex` Property
+- `return false` to prevent form submission
+- Form Validation using Regex Object
