@@ -97,3 +97,51 @@ This repository contains my day-by-day JavaScript learning journey, including co
 - Anonymous Functions
 - Arrow Functions
 - Function Calling
+
+---
+
+## 📅 Day 8 — Functions, Events, Date Object & DOM
+- Functions
+- Types of Functions
+- Variables in Functions
+- Parameters
+- Rest Parameters
+- `return` Keyword
+- Function Calling
+- Events
+- Date Object
+  - `new Date()`
+  - `getFullYear()`
+  - `getMonth()`
+  - `getDate()`
+  - `getDay()`
+  - `getHours()`
+  - `getMinutes()`
+  - `getSeconds()`
+  - `getMilliseconds()`
+  - `getTime()`
+- Introduction to DOM
+- `document.getElementById()`
+- Finding HTML elements using `id`
+- Handling `null` when an element is not found
+
+---
+
+## 📅 Day 9 — DOM, innerHTML & Client-Side Validation
+- `innerHTML`
+- Getting HTML content using `innerHTML`
+- Changing HTML content using `innerHTML`
+- `.value` Property
+- Getting values from form inputs
+- Form `onsubmit` Event
+- `return functionName()`
+- `return true`
+- `return false`
+- Client-Side Validation
+- Username Validation
+- Password Validation
+- `if` / `else if`
+- Logical OR (`||`)
+- Displaying Validation Messages using `innerHTML`
+- Basic Form Submission Handling
+- Simple Form Validation Project
