@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        span{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset>
+            <legend>DOM</legend>
+            <center>
+                <hr>
+                <table border="2">
+                    <form action="" method="post" onsubmit="return display()">
+                    
+                    <tr> 
+                        <td><label>Username</label></td>
+                        <td><input type="text" placeholder="Enter Username" id="A"></td>
+                        <td><span id="ABC"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" placeholder="Password" id="B"></td>
+                        <td><span id="abc"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit">
+                            <input type="reset" value="Reset"></td>
+                    </tr>
+
+                    <tr>
+                        <span id="X"></span>
+                    </tr>
+                </form>
+                </table>
+                <hr>
+            </center>
+        </fieldset>
+    </center>
+
+    <script>
+
+        function display(){
+
+            let username = document.getElementById("A").value
+            let passowrd = document.getElementById("B").value
+
+            let res1 = username.match(/[A-Z]{1}[a-z]*[_]{1}[0-9]{3}/g)
+            let res2 = passowrd.match(/[A-Z]{1}[_]{1}[0-9]{3}/g)    
+
+
+            if(username=="" ||  username==null){
+            //window.alert("Enter Required Fields");
+                document.getElementById("ABC").innerHTML="Enter Username"
+            return false
+            }else if(res1=="" || res1==null){
+                document.getElementById("ABC").innerHTML="Invalid Username"
+            return false
+            }else if( passowrd=="" || passowrd==null){
+                document.getElementById("abc").innerHTML="Enter Password"
+            return false
+            }else if(res2=="" || res2==null){
+                document.getElementById("abc").innerHTML="Invalid PassWord"
+            return false
+            
+        }}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <center>
+        <hr>
+        <fieldset>
+            <legend>DOM</legend>
+
+            <table border="2">
+
+                <form method="post" onsubmit="return display()">
+
+                    <tr>
+                        <td><label>Language</label></td>
+                        <td><input type="checkbox" name="lang" value="JS">
+                            <label>JS</label>
+                            <input type="checkbox" name="lang" value="Python">
+                            <label>Python</label>
+                            <input type="checkbox" name="lang" value="Java">
+                            <label>Java</label>
+                            <input type="checkbox" name="lang" value="C++">
+                            <label>C++</label>
+                        </td>
+                        <td><span id="A"></span></td>
+
+                        <tr>
+                            <td><input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+
+                    </tr>
+                </form>
+            </table>
+        </fieldset>
+        <hr>
+    </center>
+
+
+    <script>
+
+        function display(){
+            let lang = document.getElementsByName("lang")
+
+            if( lang[0].checked==false && lang[1].checked==false && lang[2].checked==false && lang[3].checked==false){
+                document.getElementById("A").innerHTML="Check least one Lanuage"
+                }
+            return false
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <center>
+        <fieldset>
+            <legend>DOM</legend>
+            <center>
+                <hr>
+                <table border="2">
+                    <form action="" method="post" onsubmit="return display()">
+
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td><input type="text" placeholder="Username" id="A"></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Buttons-></td>
+                            <td><input type="submit" value="Validate">
+                                <input type="reset" value="Reset">
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>innerHTML</td>
+                            <td><span id="B"></span></td>
+                        </tr>
+
+                    </form>
+                </table>
+                <hr>
+            </center>
+        </fieldset>
+    </center>
+
+    <script>
+
+        function display(){
+            let username = document.getElementById("A").value
+            window.alert("My Usrname is:"+username)
+            document.getElementById("B").innerHTML="My Username is: "+username
+            return false
+        }
+
+
+    </script>
+</body>
+</html>
+
+
+// Used for form validation
