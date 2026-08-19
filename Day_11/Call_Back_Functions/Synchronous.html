@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1>Call Back Function</h1>
+    </center>
+    <hr>
+
+    <script>
+
+        function intro(name,callback){
+            document.write("This is the Main function called ",name,"<br>");
+            callback()
+        }
+        function called(){
+            document.write("This is a called function by other function <br>")
+        }
+
+        intro("intro_fun",called())
+
+    </script>
+</body>
+</html>

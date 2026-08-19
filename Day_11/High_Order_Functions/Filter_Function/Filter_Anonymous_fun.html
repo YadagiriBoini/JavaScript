@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1>Filter Function</h1>
+    </center>
+    <hr>
+    
+    <script>
+        const ages=[12,23,34,45,56,67,89]
+
+        let odd_ages = ages.filter( function(x){
+            if(x%2==1){
+                return x
+            }
+        })
+        document.write("Odd ages are: ",odd_ages)
+    </script>
+</body>
+</html>

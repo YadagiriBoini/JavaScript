@@ -164,3 +164,22 @@ This repository contains my day-by-day JavaScript learning journey, including co
 - `.selectedIndex` Property
 - `return false` to prevent form submission
 - Form Validation using Regex Object
+
+---
+
+## 📅 Day 11 — Advanced JavaScript
+- Callback Functions
+- Synchronous Functions
+- Asynchronous Functions
+- Closures
+- Higher-Order Functions
+- `filter()` Function
+- `map()` Function
+- `reduce()` Function
+- OOP Basics
+- Constructors
+  - Non-Parameterized Constructor
+  - Parameterized Constructor
+- Methods
+  - Non-Static Methods
+  - Static Methods

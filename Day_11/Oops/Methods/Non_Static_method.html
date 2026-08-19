@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+    
+    <script>
+
+        class Student{
+            constructor(sid,sname,smarks){
+                this.sid = sid
+                this.sname = sname
+                this.smarks = smarks
+            }
+
+            student1(){
+                document.write(`Student name is ${this.sname}, Holding id number of
+                ${this.sid}, Obtained ${this.smarks} marks.`)
+            }
+        }
+
+        let s1 = new Student(101,"Sam",89)
+        s1.student1()
+
+    </script>
+</body>
+</html>

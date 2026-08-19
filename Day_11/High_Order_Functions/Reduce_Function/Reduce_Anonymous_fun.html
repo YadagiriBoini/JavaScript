@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr>
+    <center>
+        <h1>Reduce Function</h1>
+    </center>
+    <hr>
+    
+    <script>
+        const ages=[12,23,34,45,56,67,89]
+
+        let total_age = ages.reduce( function(x1,x2){
+            return x1+x2
+        })
+        document.write("Sum of ages: ",total_age)
+
+    </script>
+</body>
+</html>

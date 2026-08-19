@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+        <hr>
+    <center>
+        <h1>Call Back Function</h1>
+    </center>
+    <hr>
+
+    <!-- Set time out function-->
+     <script>
+
+        function firstFun(){
+            document.write("This is the first funcion<br>")
+        }
+
+        function secondFun(name){
+            document.write("This is the second function called ",name,"<br>")
+        }
+
+        setTimeout(firstFun,3000)
+        secondFun("Secound_Function")
+
+     </script>
+    
+</body>
+</html>
