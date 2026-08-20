@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        class A{
+
+            constructor(){
+                document.write(this.constructor.m1())
+                document.write(A.m1())
+            }
+
+            static m1(){
+                return "This is a Static method calling inside the constructor <br>"
+            }
+
+
+        }
+        let a1 = new A()
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        class A{
+            m1(){
+                document.write("A_Class <br>")
+            }
+        }
+
+        class B extends A{
+            m1(){
+                document.write("B_Class <br>")
+            }
+        }
+
+        class C extends B{
+            m1(){
+                document.write("C_Class")
+            }
+        }
+
+        let x1 = [ new A(), new B(),  new C() ]
+        x1.forEach(function(x){
+            x.m1()
+        })
+
+
+
+    </script>
+</body>
+</html>

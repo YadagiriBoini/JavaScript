@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        class Vachile{
+
+            constructor(){
+                this.company ="Honda"
+            }
+        }
+
+        class Bike extends Vachile{
+
+            constructor(name,price){
+                super()
+                this.name=name
+                this.price=price
+            }
+        }
+
+        let b1 = new Bike("S1",150000)
+        document.write("Bike Details: <br>")
+        document.write(b1.name+" "+b1.price+" "+b1.company)
+
+
+
+    </script>
+</body>
+</html>

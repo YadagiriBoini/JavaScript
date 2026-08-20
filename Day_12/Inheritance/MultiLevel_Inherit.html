@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        class Animal{
+
+            eat(){
+                document.write("Eats <br>")
+            }
+        }
+
+        class Dog extends Animal{
+
+            sleep(){
+                document.write("Sleeps <br>")
+            }
+        }        
+
+        class Puppy extends Dog{
+
+            woofie(){
+                document.write("Puppy Woofies")
+            }
+        }
+
+        let a1 = new Animal()
+        let d1 = new Dog()
+        let p1 = new Puppy()
+        a1.eat()
+        
+        d1.eat()
+        d1.sleep()
+
+        p1.eat()
+        p1.sleep()
+        p1.woofie()
+
+
+    </script>
+</body>
+</html>

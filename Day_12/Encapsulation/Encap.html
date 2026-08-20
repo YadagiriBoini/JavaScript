@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        class BankAcc{
+            #balance
+
+            constructor(balance){
+                this.#balance = balance
+            }
+
+            deposite(amount){
+                this.#balance += amount
+            }
+
+            getBalance(){
+                return this.#balance
+            }
+        }
+
+        const account = new BankAcc(1000)
+        account.deposite(500)
+        document.write(account.getBalance())
+        // console.log(account.#balance)  --> Error
+
+    </script>
+</body>
+</html>

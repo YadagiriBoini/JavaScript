@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>OOPS</h1></center><hr>
+
+    <script>
+
+        function Empolyee(Fname, Lname){
+            this.Fname = Fname
+            this.Lname = Lname
+        }
+
+        Empolyee.prototype.FullName = function(){
+            return this.Fname," ",Lname
+        }
+        let e1 = new Empolyee("Boini","Yadagiri")
+        document.write("First Name is ",e1.Fname,"<br>")
+        document.write("Last name is ",e1.Lname)
+
+
+    </script>
+</body>
+</html>

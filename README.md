@@ -183,3 +183,23 @@ This repository contains my day-by-day JavaScript learning journey, including co
 - Methods
   - Non-Static Methods
   - Static Methods
+
+---
+
+## 📅 Day 12 — JavaScript OOP
+- Encapsulation
+- Inheritance
+  - Single Inheritance
+  - Multilevel Inheritance
+  - Hierarchical Inheritance
+  - `super` Keyword
+- Polymorphism
+  - Method Overriding
+- Prototypes
+  - Prototype-Based Inheritance
+  - Prototype Chain
+- Static Methods
+  - Static Method
+  - Multiple Static Methods
+  - Static Methods in Classes
+  - Static Method Overriding
