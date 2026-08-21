@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>JavaScript</h1></center><hr>
+
+    <script>
+        
+        let user = {
+            name : "Yadagiri",
+            age : 20
+        }
+
+        let UpdatedUser = {
+            ...user, 
+            //age:22,                can override the previous data
+            city : "Hyderabad"
+        }
+
+        let {name,age,city} = UpdatedUser
+
+        document.write(name)
+        document.write("<br>")
+        document.write(age)
+        document.write("<br>")
+        document.write(city)
+        
+        </script>
+
+
+</body>
+</html>

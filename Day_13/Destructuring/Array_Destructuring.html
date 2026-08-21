@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <hr><center><h1>JavaScript</h1></center><hr>
+
+    <script>
+
+        /*
+        let ages = [20,21,22,23,24]
+        let a = ages[0]
+        let b = ages[3]                # Normally
+        document.write(a);
+        document.write("<br>")
+        document.write(b)
+        */
+
+
+        // With Destructuring
+
+        let ages = [20,21,22,23,24]
+
+        let [a,b,c,d,e] = ages
+        let [x,,y,,z] = ages       // Skip values
+
+        document.write(a);
+        document.write("<br>")
+        document.write(b)
+        document.write("<br>")
+        document.write(c)
+        document.write("<br>")
+        document.write(d)
+        document.write("<br>")
+        document.write(e)
+
+        document.write("<br><br>")
+        document.write("<br>")
+        document.write(x)
+        document.write("<br>")
+        document.write(y)
+        document.write("<br>")
+        document.write(z)
+    </script>
+
+
+</body>
+</html>
