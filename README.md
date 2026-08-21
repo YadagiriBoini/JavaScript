@@ -203,3 +203,17 @@ This repository contains my day-by-day JavaScript learning journey, including co
   - Multiple Static Methods
   - Static Methods in Classes
   - Static Method Overriding
+
+---
+
+## 📅 Day 13 — Modern JavaScript (ES6+)
+- Template Literals
+- Array Destructuring
+- Object Destructuring
+- Spread Operator (`...`)
+- Spread with Arrays
+- Spread with Objects
+- Rest Operator (`...`)
+- Spread vs Rest
+- Default Parameters
+- Enhanced Object Literals
