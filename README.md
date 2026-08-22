@@ -217,3 +217,23 @@ This repository contains my day-by-day JavaScript learning journey, including co
 - Spread vs Rest
 - Default Parameters
 - Enhanced Object Literals
+
+---
+
+## 📅 Day 14 — Advanced Arrays & Objects
+### Array Methods
+- `push()`
+- `pop()`
+- `unshift()`
+- `shift()`
+- `concat()`
+- `find()`
+- `findIndex()`
+- `some()`
+- `every()`
+- `includes()`
+- `sort()`
+### Object Methods
+- `Object.keys()`
+- `Object.values()`
+- `Object.entries()`
